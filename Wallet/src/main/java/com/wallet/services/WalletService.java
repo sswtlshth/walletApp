@@ -20,6 +20,7 @@ public class WalletService {
     }
 
     public Wallet addWallet(Wallet wallet) {
+        wallet.setBalance(0);
         return  walletRepository.save(wallet);
     }
 

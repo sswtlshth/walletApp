@@ -2,18 +2,18 @@ package com.wallet.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 import java.util.List;
 
 @Getter
 @Setter
-
 @Entity
 public class Wallet {
     @Id
     @GeneratedValue
     private Long id;
-
+    @NotBlank(message="Name is mandatory")
     private String name;
     private double balance;
     @JsonIgnore
