@@ -15,6 +15,8 @@ cd Wallet-UI
 npm install
 npm run
 
+UI can be browsed on : http:<hostname>:3000/
+
 
 Rest APIs details:
 1. Create Wallet
@@ -39,3 +41,5 @@ Rest APIs details:
         "id":1
         }
     }
+    
+    
