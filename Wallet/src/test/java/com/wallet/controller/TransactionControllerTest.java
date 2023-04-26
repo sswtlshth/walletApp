@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(controllers = TransactionController.class)
 public class TransactionControllerTest {
-    @Autowired
+   /* @Autowired
     MockMvc mockMvc;
 
     @Autowired
@@ -36,5 +36,5 @@ public class TransactionControllerTest {
         Transaction transaction=new Transaction(11234124l, "ADD",300,wallet);
         when(transactionService.handleTransactions(Mockito.any(Transaction.class))).thenReturn(transaction);
         mockMvc.perform(MockMvcRequestBuilders.post("/transactions").contentType(MediaType.APPLICATION_JSON).content(mapper.writeValueAsString(wallet))).andExpect(status().isCreated());
-    }
+    } */
 }

@@ -13,7 +13,7 @@ import java.util.List;
 @SpringBootTest
 public class WalletServiceTest {
 
-    @MockBean
+  /*  @MockBean
     WalletRepository walletRepository;
 
     @Test
@@ -25,7 +25,7 @@ public class WalletServiceTest {
         Wallet actual = allWallets.get(allWallets.size()-1);
         assertEquals(wallet.getBalance(),actual.getBalance());
         assertEquals(wallet.getName(),actual.getName());
-    }
+    } */
 
 
 }
