@@ -15,12 +15,12 @@ cd Wallet-UI
 npm install
 npm run
 
-UI can be browsed on : http:<hostname>:3000/
+UI can be browsed on : http://localhost:3000/
 
 
 Rest APIs details:
 1. Create Wallet
-    POST http://<hostname>:<port>/wallets
+    POST http://localhost:8080/wallets
     Payload: 
     {
         "name": <Wallet-Name>,
@@ -30,7 +30,7 @@ Rest APIs details:
     GET http://<hostname>:<port>/wallets
    
 3. Get all Wallets by name:
-    GET http://<hostname>:<port>/wallets/<wallet-name>
+    GET http://localhost:8080/wallets/<wallet-name>
       
 4. Make transaction (transactionType "ADD" to add funds, "WITHDRAW" to with funds):
    POST http://localhost:8080/transactions{
@@ -42,4 +42,4 @@ Rest APIs details:
         }
     }
     
-    
+Replace localhost with hostname in case this apis needs to be accessed from other system.
