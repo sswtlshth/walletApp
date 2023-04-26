@@ -5,15 +5,15 @@ This project contains
 1. Wallet
 2. Wallet-UI
 
-1. Running (Wallet)springboot application using docker:
-cd Wallet
-docker build --tag wallet:wallet
-docker run -p 8080:8080 wallet:wallet
+==============Running (Wallet)springboot application using docker:==============
+1. cd Wallet
+2. docker build --tag wallet:wallet
+3. docker run -p 8080:8080 wallet:wallet
 
-2. Running (Wallet-UI), React Application is dependent on spring boot service serving at 8080.
-cd Wallet-UI
-npm install
-npm run
+================Running (Wallet-UI), React Application is dependent on spring boot service serving at 8080.==========
+1. cd Wallet-UI
+2. npm install
+3. npm run
 
 UI can be browsed on : http://localhost:3000/
 
